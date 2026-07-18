@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #f5f1e6;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #a4275a;
+  color: #f4f2ec;
+}
+
+.pf-btn {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.pf-btn:hover {
+  opacity: 0.85;
+}
+.pf-btn:active {
+  transform: scale(0.97);
+}
+.pf-btn:focus-visible,
+.pf-thumb:focus-visible,
+.pf-icon:focus-visible {
+  outline: 1px solid #b8a0aa;
+  outline-offset: 3px;
+}
+
+.pf-thumb {
+  transition: opacity 0.2s ease;
+}
+.pf-thumb:hover {
+  opacity: 0.75;
+}
+
+.pf-fade {
+  animation: pfFade 0.6s ease;
+}
+@keyframes pfFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-fade { animation: none; }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+}
