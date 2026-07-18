@@ -11,8 +11,6 @@ export default function Contact() {
         <h1 style={styles.textHeading}>Kontakt</h1>
         <div style={styles.contactBlock}>
           <span style={styles.contactLine}>Philipp Sobioch</span>
-          <span style={styles.contactLine}>Hobusch 12</span>
-          <span style={styles.contactLine}>33619 Bielefeld</span>
           <a href="mailto:philippsobioch@yahoo.de" style={styles.contactLink}>
             philippsobioch@yahoo.de
           </a>
