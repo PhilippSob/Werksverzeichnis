@@ -140,7 +140,7 @@ export const styles = {
   image: {
     width: "100%",
     height: "100%",
-    objectFit: "cover",
+    objectFit: "contain",
     display: "block",
     filter: "saturate(1.05) contrast(1.05)",
   },
